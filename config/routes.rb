@@ -1,5 +1,6 @@
-root 'universities#index'
+
 Rails.application.routes.draw do
+  root 'universities#index'
   resources :programs
   resources :book_histories
   resources :books
