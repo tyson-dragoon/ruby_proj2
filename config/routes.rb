@@ -1,4 +1,4 @@
-
+get '/', to:'universities#index'
 Rails.application.routes.draw do
   root 'universities#index'
   resources :programs
