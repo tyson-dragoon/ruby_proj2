@@ -1,0 +1,33 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @student.password %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+
+<p>
+  <strong>Bookmarks:</strong>
+  <%= @student.bookmarks %>
+</p>
+
+<p>
+  <b>University:</b>
+  <%= University.find(@student.university_id).name %>
+</p>
+
+<p>
+  <b>Program:</b>
+  <%= Program.find(@student.program_id).name %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
