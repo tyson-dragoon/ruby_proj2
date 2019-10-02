@@ -1,6 +1,6 @@
-get '/', to:'universities#index'
+
 Rails.application.routes.draw do
-  root 'universities#index'
+  get '/', to:'universities#index'
   resources :programs
   resources :book_histories
   resources :books
