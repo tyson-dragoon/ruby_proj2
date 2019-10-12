@@ -70,6 +70,8 @@ GEM
       zeitwerk (~> 2.1, >= 2.1.8)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    ancestry (3.0.7)
+      activerecord (>= 3.2.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -221,12 +223,12 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
+    uniform_notifier (1.13.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
-    uniform_notifier (1.13.0)
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -252,13 +254,14 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  ancestry
   bootsnap (>= 1.4.2)
   bullet
   byebug
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
-  grape
   geocoder
+  grape
   jbuilder (~> 2.7)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
