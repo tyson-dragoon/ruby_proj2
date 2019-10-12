@@ -107,6 +107,7 @@ GEM
     execjs (2.7.0)
     ffi (1.11.1)
     ffi (1.11.1-x64-mingw32)
+    geocoder (1.5.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     grape (1.2.4)
@@ -252,6 +253,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
   grape
+  geocoder
   jbuilder (~> 2.7)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
